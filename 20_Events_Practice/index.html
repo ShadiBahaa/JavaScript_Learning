@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document type as HTML5 and sets the language to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+
+    <title>Working with Events</title>
+    <!-- Sets the title of the webpage -->
+
+    <style>
+        /* Styles for the main container */
+        .container {
+            border: 2px solid #333; /* Adds a dark border */
+            padding: 20px; /* Adds padding inside the container */
+            margin: 20px; /* Adds space outside the container */
+        }
+
+        /* Styles for the form container */
+        .form-container {
+            background-color: #f5f5f5; /* Light gray background */
+            padding: 20px; /* Adds padding inside the container */
+            margin: 20px; /* Adds space outside the container */
+        }
+
+        /* Styles for individual items */
+        .item {
+            padding: 10px; /* Adds padding inside the item */
+            margin: 5px; /* Adds space outside the item */
+            background-color: #f0f0f0; /* Light gray background */
+            border: 1px solid #999; /* Adds a light border */
+        }
+
+        /* Styles for delete buttons */
+        .delete-btn {
+            float: right; /* Aligns the button to the right */
+            color: red; /* Sets the text color to red */
+            cursor: pointer; /* Changes the cursor to a pointer on hover */
+            padding: 0 5px; /* Adds horizontal padding */
+        }
+
+        /* Styles for the custom context menu */
+        .custom-menu {
+            display: none; /* Hides the menu by default */
+            position: absolute; /* Positions the menu relative to the viewport */
+            background: white; /* White background */
+            border: 1px solid #999; /* Adds a light border */
+            padding: 10px; /* Adds padding inside the menu */
+        }
+
+        /* Styles for the modal */
+        .modal {
+            padding: 20px; /* Adds padding inside the modal */
+            background: white; /* White background */
+            border: 1px solid #999; /* Adds a light border */
+            margin: 20px; /* Adds space outside the modal */
+        }
+
+        /* Styles for input fields */
+        .input-field {
+            margin: 10px 0; /* Adds vertical margin */
+            padding: 5px; /* Adds padding inside the input */
+        }
+
+        /* Styles for error messages */
+        .error {
+            color: red; /* Sets the text color to red */
+            display: none; /* Hides the error messages by default */
+        }
+    </style>
+    <!-- Inline CSS styles for the webpage -->
+</head>
+
+<body>
+    <!-- Main content of the webpage -->
+
+    <div class="container" id="mainContainer">
+        <!-- A container for interactive elements -->
+        <h2>Interactive Elements</h2>
+        <!-- Heading for the section -->
+
+        <div class="item">
+            <!-- An individual item -->
+            Item 1 <span class="delete-btn">×</span>
+            <!-- Delete button for the item -->
+        </div>
+
+        <div class="item">
+            <!-- Another individual item -->
+            Item 2 <span class="delete-btn">×</span>
+            <!-- Delete button for the item -->
+        </div>
+    </div>
+
+    <div class="form-container">
+        <!-- A container for the form -->
+        <form id="myForm">
+            <!-- Form element with an ID for JavaScript targeting -->
+
+            <input type="text" id="nameInput"
+                   class="input-field"
+                   placeholder="Enter your name">
+            <!-- Text input for the user's name -->
+
+            <div class="error" id="nameError">
+                <!-- Error message for the name input -->
+                Name is required
+            </div>
+
+            <input type="email" id="emailInput"
+                   class="input-field"
+                   placeholder="Enter your email">
+            <!-- Email input for the user's email -->
+
+            <div class="error" id="emailError">
+                <!-- Error message for the email input -->
+                Valid email is required
+            </div>
+
+            <button type="submit">Submit</button>
+            <!-- Submit button for the form -->
+        </form>
+    </div>
+
+    <div class="modal" id="simpleModal">
+        <!-- A modal element with an ID for JavaScript targeting -->
+        <h3>Modal Content</h3>
+        <!-- Heading for the modal -->
+
+        <p>Click anywhere inside this modal.</p>
+        <!-- Instructional text -->
+
+        <p>Events will not propagate to parent elements.</p>
+        <!-- Additional information about event propagation -->
+    </div>
+
+    <div class="custom-menu" id="customMenu">
+        <!-- A custom context menu with an ID for JavaScript targeting -->
+        <div>Custom Menu Item 1</div>
+        <!-- First menu item -->
+
+        <div>Custom Menu Item 2</div>
+        <!-- Second menu item -->
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file -->
+</body>
+</html>

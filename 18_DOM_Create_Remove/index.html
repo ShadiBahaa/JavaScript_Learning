@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document type as HTML5 and sets the language of the document to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+
+    <title>Creating and Removing Elements</title>
+    <!-- Sets the title of the webpage, which appears in the browser tab -->
+
+    <style>
+        /* Defines internal CSS styles for the webpage */
+        
+        .container {
+            border: 2px solid #333;
+            /* Adds a solid border with a dark gray color around the container */
+
+            padding: 20px;
+            /* Adds space inside the container between the content and the border */
+
+            margin: 20px;
+            /* Adds space outside the container to separate it from other elements */
+        }
+
+        .new-element {
+            background-color: lightgreen;
+            /* Sets the background color of new elements to light green */
+
+            padding: 10px;
+            /* Adds space inside the new element between the content and the border */
+
+            margin: 5px;
+            /* Adds space outside the new element to separate it from other elements */
+        }
+
+        .highlight {
+            background-color: yellow;
+            /* Sets the background color of highlighted elements to yellow */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The main content of the webpage -->
+
+    <h1>Creating and Removing Elements</h1>
+    <!-- Main heading of the webpage -->
+
+    <div id="container1" class="container">
+        <!-- A container with an ID of "container1" and a class of "container" -->
+
+        <h2>Container 1</h2>
+        <!-- Subheading for the first container -->
+
+        <p>Some initial content</p>
+        <!-- A paragraph inside the first container -->
+
+        <button>Get the button we created earlier</button>
+        <!-- A button inside the first container -->
+    </div>
+
+    <div id="container2" class="container">
+        <!-- A second container with an ID of "container2" and a class of "container" -->
+
+        <h2>Container 2</h2>
+        <!-- Subheading for the second container -->
+
+        <p>Another paragraph</p>
+        <!-- A paragraph inside the second container -->
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file named "script.js" to add interactivity -->
+</body>
+</html>

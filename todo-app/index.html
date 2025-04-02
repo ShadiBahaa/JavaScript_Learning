@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document type as HTML5 and sets the language to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the page is responsive and scales properly on different devices -->
+
+    <title>Complete ToDo App</title>
+    <!-- Sets the title of the webpage that appears in the browser tab -->
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Links an external CSS file for styling the webpage -->
+</head>
+
+<body>
+    <div class="container">
+        <!-- Main container for the entire application -->
+
+        <h1>Todo List</h1>
+        <!-- Header for the application -->
+
+        <form id="todoForm" class="todo-form">
+            <!-- Form for adding new todos, identified by an ID and styled with a class -->
+
+            <input
+                type="text"
+                id="todoInput"
+                placeholder="What needs to be done?"
+                required
+                minlength="3"
+            >
+            <!-- Input field for entering a new todo item, with validation for minimum length -->
+
+            <button type="submit" id="submitButton">Add Todo</button>
+            <!-- Submit button to add the entered todo item -->
+        </form>
+
+        <!-- Add filters and counter -->
+        <div class="todo-controls">
+            <!-- Section for displaying the todo counter and filter buttons -->
+
+            <span id="todoCount">0 items left</span>
+            <!-- Displays the count of remaining todos -->
+
+            <div class="filters">
+                <!-- Container for filter buttons -->
+
+                <button class="filter-btn active" data-filter="all">All</button>
+                <!-- Button to show all todos, marked as active by default -->
+
+                <button class="filter-btn" data-filter="active">Active</button>
+                <!-- Button to filter and show only active (incomplete) todos -->
+
+                <button class="filter-btn" data-filter="completed">Completed</button>
+                <!-- Button to filter and show only completed todos -->
+            </div>
+
+            <button id="clearCompleted" class="clear-btn">Clear Completed</button>
+            <!-- Button to clear all completed todos -->
+        </div>
+
+        <div id="loadingMessage" class="message loading">Loading todos...</div>
+        <!-- Message displayed while todos are being loaded -->
+
+        <div id="errorMessage" class="message error"></div>
+        <!-- Placeholder for displaying error messages -->
+
+        <div id="todoList"></div>
+        <!-- Container where the list of todos will be dynamically rendered -->
+    </div>
+
+    <script src="app.js"></script>
+    <!-- Links an external JavaScript file for the application's functionality -->
+</body>
+</html>

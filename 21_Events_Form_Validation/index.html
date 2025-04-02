@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document type as HTML5 and sets the language to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the page is responsive and scales properly on different devices -->
+
+    <title>Form Validation and Best Practices</title>
+    <!-- Sets the title of the webpage -->
+
+    <style>
+        /* Styles for the form container */
+        .form-container {
+            max-width: 500px; /* Limits the width of the form */
+            margin: 20px auto; /* Centers the form horizontally and adds vertical margin */
+            padding: 20px; /* Adds padding inside the container */
+            border: 1px solid #ccc; /* Adds a light gray border */
+            border-radius: 5px; /* Rounds the corners of the container */
+        }
+
+        /* Styles for individual form groups */
+        .form-group {
+            margin-bottom: 15px; /* Adds spacing between form fields */
+        }
+
+        /* Styles for form labels */
+        .form-group label {
+            display: block; /* Ensures labels are displayed on their own line */
+            margin-bottom: 5px; /* Adds spacing below the label */
+        }
+
+        /* Styles for input fields */
+        .form-group input {
+            width: 100%; /* Makes input fields span the full width of the container */
+            padding: 8px; /* Adds padding inside the input fields */
+            border: 1px solid #ddd; /* Adds a light gray border */
+            border-radius: 4px; /* Rounds the corners of the input fields */
+        }
+
+        /* Styles for error messages */
+        .error {
+            color: red; /* Sets the text color to red */
+            font-size: 0.8em; /* Reduces the font size */
+            margin-top: 5px; /* Adds spacing above the error message */
+            display: none; /* Hides the error message by default */
+        }
+
+        /* Styles for success messages */
+        .success {
+            color: green; /* Sets the text color to green */
+            font-size: 0.8em; /* Reduces the font size */
+            margin-top: 5px; /* Adds spacing above the success message */
+            display: none; /* Hides the success message by default */
+        }
+
+        /* Styles for the submit button */
+        button {
+            padding: 10px 15px; /* Adds padding inside the button */
+            background-color: #4CAF50; /* Sets the background color to green */
+            color: white; /* Sets the text color to white */
+            border: none; /* Removes the border */
+            border-radius: 4px; /* Rounds the corners of the button */
+            cursor: pointer; /* Changes the cursor to a pointer on hover */
+        }
+
+        /* Styles for disabled buttons */
+        button:disabled {
+            background-color: #cccccc; /* Sets the background color to gray */
+            cursor: not-allowed; /* Changes the cursor to indicate the button is disabled */
+        }
+
+        /* Styles for valid input fields */
+        .valid {
+            border-color: #4CAF50; /* Changes the border color to green */
+        }
+
+        /* Styles for invalid input fields */
+        .invalid {
+            border-color: #f44336; /* Changes the border color to red */
+        }
+    </style>
+    <!-- Inline CSS styles for the form and its elements -->
+</head>
+
+<body>
+    <div class="form-container">
+        <!-- Container for the form with styling applied -->
+
+        <h2>Registration Form</h2>
+        <!-- Heading for the form -->
+
+        <form id="registrationForm">
+            <!-- Form element with an ID for JavaScript targeting -->
+
+            <div class="form-group">
+                <!-- Group for the username field -->
+                <label for="username">Username</label>
+                <!-- Label for the username input -->
+                <input type="text" id="username" name="username" required>
+                <!-- Text input for the username, marked as required -->
+                <div class="error" id="usernameError"></div>
+                <!-- Placeholder for username error messages -->
+                <div class="success" id="usernameSuccess">Username is available!</div>
+                <!-- Placeholder for username success messages -->
+            </div>
+
+            <div class="form-group">
+                <!-- Group for the email field -->
+                <label for="email">Email</label>
+                <!-- Label for the email input -->
+                <input type="email" id="email" name="email" required>
+                <!-- Email input field, marked as required -->
+                <div class="error" id="emailError"></div>
+                <!-- Placeholder for email error messages -->
+            </div>
+
+            <div class="form-group">
+                <!-- Group for the password field -->
+                <label for="password">Password</label>
+                <!-- Label for the password input -->
+                <input type="password" id="password" name="password" required>
+                <!-- Password input field, marked as required -->
+                <div class="error" id="passwordError"></div>
+                <!-- Placeholder for password error messages -->
+            </div>
+
+            <div class="form-group">
+                <!-- Group for the confirm password field -->
+                <label for="confirmPassword">Confirm Password</label>
+                <!-- Label for the confirm password input -->
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <!-- Password confirmation input field, marked as required -->
+                <div class="error" id="confirmPasswordError"></div>
+                <!-- Placeholder for confirm password error messages -->
+            </div>
+
+            <div class="form-group">
+                <!-- Group for the phone number field -->
+                <label for="phone">Phone Number</label>
+                <!-- Label for the phone number input -->
+                <input type="tel" id="phone" name="phone">
+                <!-- Phone number input field -->
+                <div class="error" id="phoneError"></div>
+                <!-- Placeholder for phone number error messages -->
+            </div>
+
+            <button type="submit" id="submitButton">Register</button>
+            <!-- Submit button for the form -->
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file for form validation and interactivity -->
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document type as HTML5 and sets the language of the document to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+
+    <title>DOM Element Selection</title>
+    <!-- Sets the title of the document, which appears in the browser tab -->
+</head>
+
+<body>
+    <!-- The main content of the document starts here -->
+
+    <h1 id="main-title">Selecting DOM Elements</h1>
+    <!-- A heading element with an ID for easy selection in JavaScript or CSS -->
+
+    <div id="container">
+        <!-- A container div with an ID for grouping and styling child elements -->
+
+        <div class="box">Box 1</div>
+        <!-- A div with a class "box" for styling, containing the text "Box 1" -->
+
+        <div class="box">Box 2</div>
+        <!-- Another div with the same class "box", containing the text "Box 2" -->
+
+        <div class="box">
+            <!-- A div with the class "box", containing nested elements -->
+
+            <div class="special"> Special Box</div>
+            <!-- A nested div with the class "special", styled differently -->
+
+            Box 3
+            <!-- Text content inside the parent div -->
+        </div>
+    </div>
+
+    <ul id="list">
+        <!-- An unordered list with an ID for grouping and styling list items -->
+
+        <li class="item">First Item</li>
+        <!-- A list item with the class "item", containing the text "First Item" -->
+
+        <li class="item special">Second Item</li>
+        <!-- A list item with two classes: "item" and "special", styled differently -->
+
+        <li class="item">Third Item</li>
+        <!-- Another list item with the class "item", containing the text "Third Item" -->
+    </ul>
+
+    <p class="text">This is a paragraph</p>
+    <!-- A paragraph with the class "text", containing some text -->
+
+    <p class="text special">This is a special paragraph</p>
+    <!-- A paragraph with two classes: "text" and "special", styled differently -->
+
+    <div id="practice-area">
+        <!-- A div with an ID where elements can be dynamically added via JavaScript -->
+        <!-- Currently empty -->
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file named "script.js" for adding interactivity -->
+</body>
+
+<style>
+    /* Inline CSS styles for the document */
+
+    .box {
+        padding: 10px;
+        /* Adds padding inside the box */
+
+        margin: 5px;
+        /* Adds space outside the box */
+
+        border: 1px solid black;
+        /* Adds a black border around the box */
+    }
+
+    .special {
+        background-color: lightyellow;
+        /* Sets a light yellow background for elements with the "special" class */
+    }
+
+    .highlight {
+        background-color: yellow;
+        /* Sets a yellow background for elements with the "highlight" class */
+    }
+</style>
+<!-- Defines styles for elements in the document -->

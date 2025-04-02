@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document type as HTML5 and sets the language of the document to English. -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8. -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper rendering and touch zooming on mobile devices. -->
+
+    <title>DOM Manipulation</title>
+    <!-- Sets the title of the webpage, which appears in the browser tab. -->
+
+    <style>
+        /* Internal CSS for styling elements on the page. */
+
+        .highlight {
+            background-color: yellow;
+            /* Adds a yellow background to elements with this class. */
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+            /* Styles text with green color and bold font for elements with this class. */
+        }
+
+        .error {
+            color: red;
+            font-style: italic;
+            /* Styles text with red color and italic font for elements with this class. */
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 10px;
+            display: inline-block;
+            /* Defines a box with specific dimensions, border, margin, and inline-block display. */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The main content of the webpage starts here. -->
+
+    <h1 id="main-title">DOM Manipulation</h1>
+    <!-- A heading with an ID for easy DOM selection and manipulation. -->
+
+    <div id="content">
+        <!-- A container div with an ID to group related content. -->
+
+        <p id="text-content">This is some text we'll modify.</p>
+        <!-- A paragraph with an ID for text content that can be modified via JavaScript. -->
+
+        <p id="html-content">This paragraph contains <span>HTML content</span>.</p>
+        <!-- A paragraph with an ID containing a span element for demonstrating HTML content manipulation. -->
+
+        <div class="box" id="style-box">Style me!</div>
+        <!-- A div with a class and ID for demonstrating style manipulation. -->
+
+        <div id="attribute-demo">
+            <!-- A container div for demonstrating attribute manipulation. -->
+
+            <img id="demo-img" src="https://placehold.co/150" alt="placeholder">
+            <!-- An image with an ID, source URL, and alt text for attribute manipulation. -->
+
+            <a id="demo-link" href="#">Click me</a>
+            <!-- A hyperlink with an ID and placeholder href for attribute manipulation. -->
+        </div>
+
+        <div id="class-demo" class="box">Class manipulation demo</div>
+        <!-- A div with both an ID and a class for demonstrating class manipulation. -->
+
+        <div id="creation-area">
+            <!-- A container div where new elements will be dynamically created via JavaScript. -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file for adding interactivity and DOM manipulation. -->
+</body>
+</html>

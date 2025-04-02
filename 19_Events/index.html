@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Declares the document type as HTML5 and sets the language to English -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document as UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
+
+    <title>JavaScript Events</title>
+    <!-- Sets the title of the webpage, displayed in the browser tab -->
+
+    <style>
+        /* Internal CSS for styling the elements on the page */
+
+        .button {
+            /* Styles for buttons */
+            padding: 10px 20px; /* Adds padding inside the button */
+            margin: 10px; /* Adds space around the button */
+            cursor: pointer; /* Changes the cursor to a pointer on hover */
+            background-color: #4CAF50; /* Sets the button background color to green */
+            color: white; /* Sets the text color to white */
+            border: none; /* Removes the border */
+            border-radius: 4px; /* Rounds the corners of the button */
+        }
+
+        .box {
+            /* Styles for the box element */
+            width: 200px; /* Sets the width of the box */
+            height: 200px; /* Sets the height of the box */
+            border: 2px solid black; /* Adds a black border around the box */
+            margin: 20px; /* Adds space around the box */
+            display: flex; /* Enables flexbox layout for the box */
+            align-items: center; /* Centers content vertically */
+            justify-content: center; /* Centers content horizontally */
+            background-color: #f0f0f0; /* Sets the background color to light gray */
+        }
+
+        .highlight {
+            /* Additional class to highlight elements */
+            background-color: yellow; /* Changes the background color to yellow */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Main content of the webpage -->
+
+    <h1>Understanding JavaScript Events</h1>
+    <!-- Main heading of the page -->
+
+    <div id="interactive-area">
+        <!-- Container for interactive elements -->
+
+        <button id="clickButton" class="button">Click Me!</button>
+        <!-- Button with an ID and class for styling, used for click events -->
+
+        <button id="removeButton" class="button">Remove Listener</button>
+        <!-- Button to remove event listeners -->
+
+        <div id="hoverBox" class="box">Mouse over me</div>
+        <!-- A box element with an ID and class, used for hover events -->
+
+        <input id="inputField" type="text" placeholder="Type something...">
+        <!-- Input field for user text input with a placeholder -->
+    </div>
+
+    <div id="displayArea"></div>
+    <!-- Empty div to display dynamic content -->
+
+    <script src="script.js"></script>
+    <!-- Links an external JavaScript file for event handling -->
+</body>
+</html>
