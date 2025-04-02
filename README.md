@@ -93,7 +93,8 @@ As part of the learning process, I built a **TODO List** project, applying DOM m
  ┣ 📂 34_Modern_Operators/  
  ┣ 📂 35_BigInt/  
  ┣ 📂 todo-app/        # TODO List project  
- ┗ README.md  
+ ┗ README.md
+```
 
 ## 🚀 How to Use  
 
@@ -101,12 +102,12 @@ As part of the learning process, I built a **TODO List** project, applying DOM m
 To get a local copy of this project, run the following command in your terminal:  
 ```sh
 git clone https://github.com/ShadiBahaa/JavaScript_Learning.git
-
+```
 ### 2️⃣ Navigate to the Project Folder
 Move into the project directory:
 ```sh
 cd JavaScript_Learning
-
+```
 ### 3️⃣ Explore the Code
 Each subfolder contains examples and exercises for different JavaScript topics. You can open them in your preferred code editor (e.g., VS Code).
 
@@ -115,7 +116,7 @@ Each subfolder contains examples and exercises for different JavaScript topics. 
 - For JavaScript files (.js), you can execute them using Node.js:
   ```sh
   node filename.js
-
+  ```
 ### 5️⃣ Modify and Experiment
 Feel free to modify the code and experiment with different JavaScript concepts.
 
@@ -123,5 +124,5 @@ Feel free to modify the code and experiment with different JavaScript concepts.
 To get the latest changes from this repository, pull updates using:
 ```sh
 git pull origin main
-
+```
 
