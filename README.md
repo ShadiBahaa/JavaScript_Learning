@@ -120,7 +120,7 @@ Each subfolder contains examples and exercises for different JavaScript topics. 
 ### 5️⃣ Modify and Experiment
 Feel free to modify the code and experiment with different JavaScript concepts.
 
-6️⃣ Stay Updated
+### 6️⃣ Stay Updated
 To get the latest changes from this repository, pull updates using:
 ```sh
 git pull origin main
