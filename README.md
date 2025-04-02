@@ -111,6 +111,10 @@ cd JavaScript_Learning
 ### 3️⃣ Explore the Code
 Each subfolder contains examples and exercises for different JavaScript topics. You can open them in your preferred code editor (e.g., VS Code).
 
+## 📜 License  
+This project is licensed under the **MIT License** – see the [LICENSE](./LICENSE) file for details.
+
+
 ### 4️⃣ Run the Code
 - Open any .html file in a browser to see the scripts in action.
 - For JavaScript files (.js), you can execute them using Node.js:
